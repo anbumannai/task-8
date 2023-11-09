@@ -1,0 +1,47 @@
+class TvClass:
+
+def _init_(self, brand, price, inches, OnOFF, volume=50, channel=1):
+
+self.brand = brand
+
+self.price = price
+
+self.inches = inches
+
+self.OnOFF = OnOFF
+
+self.volume = volume
+
+self.channel = channel
+
+def increaseVolume(self): if self.volume < 100: self.volume += 1
+
+def decreaseVolume(self): if self.volume > 0: self.volume -= 1
+
+def changeChannel(self, channelNumber): if 0 <= channel Number <= 50: self.channel = channelNumber
+
+def reset(self):
+
+self.channel = 1
+
+self.volume = 50
+
+def showStatus(self): print(f"{self.brand) at channel {self.channel}, volume (self.volume}")
+
+class Plasma (TvClass):
+pass
+
+class LEDTV(TvClass):
+pass
+
+plasma = Plasma ("Sony", 100000, 50, "on")
+
+plasma.showStatus()
+
+plasma.increaseVolume()
+
+plasma.increaseVolume()
+
+plasma.changeChannel(29)
+
+plasma.showStatus()
